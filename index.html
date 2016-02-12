@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Exquisite Crowdsource</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="seven columns" id="left-column">
+        <h2>Exquisite Crowdsource</h2>
+        <h5>| Total lines | <span id="story-length"></span></h5>
+
+        <form id="sentence">
+          <div class="form-group">
+            <label for="sentence">Add a line...</label>
+            <input id="sentence" type="text">
+            <br>
+            <button class="button-primary" type="submit">Submit Line</button>
+          </div>
+        </form>
+
+        <button class="button-primary" id="show-story">Show the corpse</button>
+
+        <ul id="story">
+          <li></li>
+        </ul>
+
+        <button class="button-primary" id="start-over">Clear</button>
+
+      </div>
+
+      <div class="five columns" id="rules-box">
+        <h3>Exquisite Corpse...</h3>
+        <button class="button-inverse" id="overlay">See examples</button>
+        <br>
+        <p>...Is a collaborative word or picture game that was originally invented by Surrealists in the early twentieth century. The first player writes a word or sentence, then the next player builds on that sentence, and so on. The catch: a player can only see the sentence or word that the previous player wrote. Try it out!</p>
+        <h5>How to play</h5>
+        <ul>
+          <li>Enter a sentence and hit submit.</li>
+          <li>Play until you've reached the desired number of lines.</li>
+          <li>Click on "Show the Corpse" to reveal the story.</li>
+          <li>Click the clear button to start over.</li>
+        </ul>
+
+        <p>A little game utilizing Javascript, jQuery and Skeleton by Franz Knupfer. To see more of his code, check out <a href="https://github.com/franzknupfer">github</a>.</p>
+      </div>
+    </div>
+    <row>
+    </row>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
