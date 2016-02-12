@@ -11,14 +11,15 @@ $(document).ready(function() {
     $("#story").append("<li>" + sentence + "</li>");
     $("ul#story").children("li").hide();
     $("ul#story").children("li").last().show();
-    $("#story-length").empty().append($("ul#story li").size() - 1);
+    $("#story-length").empty().append($("ul#story li").size());
 
     $("button#show-story").click(function() {
       $("ul#story").children("li").show();
     });
 
     $("button#start-over").click(function() {
-      $("ul#story").children("li").empty();
+      $("ul#story").children("li").remove();
+      $("#story-length").empty();
     });
 
     event.preventDefault();
