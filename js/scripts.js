@@ -7,11 +7,13 @@ $(document).ready(function() {
   $("form#sentence").submit(function(event) {
 
     var sentence = $('input#sentence').val();
+    var form = document.getElementById("sentence");
 
     $("#story").append("<li>" + sentence + "</li>");
     $("ul#story").children("li").hide();
     $("ul#story").children("li").last().show();
     $("#story-length").empty().append($("ul#story li").size());
+    form.reset();
 
     $("button#show-story").click(function() {
       $("ul#story").children("li").show();
